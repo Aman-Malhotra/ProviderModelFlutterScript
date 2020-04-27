@@ -25,6 +25,7 @@ When you have given your project location we can move forward with setting thing
 <b>Step 4.</b> You'll be asked to enter the name of widget you want to create depending on your app.
 <em>Eg - signUp, signIn, dashboard, landingPage, profilePage, homeWidget, paymentPortal, etc.</em>.
 It is not a necessity, but try using <em>lowerCamelCasing</em> while naming your widgets. 
+
 > Name - signIn
 
 <b>Step 5.</b> You'll be given 2 options to choose from 
@@ -40,3 +41,10 @@ Enter your option
 
 
 
+-----------------------------------------------------------------------------------
+## Contribution
+
+Any new suggestions are welcome as to how can this be taken forward and what more features can be put in to add even more ease to user while developing with such an amazing SDK.
+Looking forward to suggestions and you can open an issue if there are any. 
+
+Pull Requests with new feature(s) or bug fixes are always welcome.
