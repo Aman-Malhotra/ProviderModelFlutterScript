@@ -12,7 +12,7 @@
 1.If you <b>didn't skip Step 1</b> and you are inside your project root directory.
 > Enter 'y' (Without quotes) and press Enter
 
-Move to <b>Step 4.</b>
+Skip to <b>Step 4</b>.
 
 2. If you <b>skipped Step 1</b> and you are not inside your project root directory.
 > Enter 'n' (Without quotes) and press Enter
@@ -20,9 +20,6 @@ Move to <b>Step 4.</b>
 You'll be asked to paste your project location 
 > <enter_project_location_here> and press Enter
 
-Move to <b>Step 4.</b>
-
-------------------------------------------------------------------------------
 When you have given your project location we can move forward with setting things up.
 
 <b>Step 4.</b> You'll be asked to enter the name of widget you want to create depending on your app.
