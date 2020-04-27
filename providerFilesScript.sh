@@ -58,7 +58,7 @@ askForStatefulOrStatelessWidget() {
     done
 }
 
-# Folder for adding widget files
+# Function for adding Widgets folder
 addWidgetsFolder() {
     folderName="Widgets"
     if [ -d "${folderName}" ]; then
@@ -68,7 +68,7 @@ addWidgetsFolder() {
     fi
     cd "${folderName}"
 }
-# Folder for adding Provider Model files
+# Function for adding ProviderModels folder
 addProviderModelsFolder() {
     folderName="ProviderModels"
     if [ -d "${folderName}" ]; then
