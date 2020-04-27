@@ -111,6 +111,14 @@ moveInsideLocation() {
     cd ${locaiton}
 }
 
+moveInsideLib(){
+    if [ ! -d "lib" ]; then
+        echo $'No lib folder found.\nCreating lib folder'
+        mkdir lib
+    fi
+    cd lib
+}
+
 askForProjetcLocation() {
     while true; do
         read -p $'Are you inside your Flutter project\'s root location ? y/N\n' yN
@@ -118,17 +126,14 @@ askForProjetcLocation() {
         case $yN in
         [Yy]*)
             # Nothing here as of now if user enters yes
-            echo $'Moving inside lib\n'
-            cd lib
-            echo ""
+            moveInsideLib
             break
             ;;
         [Nn]*)
             # ask user for project root location
             read -p $'Please paste your Flutter project root location here\n' projectLocation
             moveInsideLocation ${projectLocation}
-            cd lib
-            echo ""
+            moveInsideLib
             break
             ;;
         *)
