@@ -2,7 +2,7 @@
 
 getStatefulWidgetCode() {
     fileName=$1
-    echo $'import \'package:flutter/material.dart\';\r\nimport \'package:provider/provider.dart\';\r\nimport \'package:shopLocal/ProviderModels/'${fileName}$'ProviderModel/'${fileName}$'_pm.dart\';\r\n// Copy the line below and add as a child where you want to use '${fileName^}$' Widget\r\n// ChangeNotifierProvider(create:(context)=>'${fileName^}$'Pm(),child: '${fileName^}$'())\r\n\nclass '${fileName^}$' extends StatefulWidget {\r\n@override\r\n_'${fileName^}$'State createState() => _'${fileName^}$'State();\r\n}\r\n\r\nclass _'${fileName^}$'State extends State<'${fileName^}$'> {\r\n @override\r\n  Widget build(BuildContext context) {\r\n'${fileName^}'Pm '${fileName}'Pm = Provider.of<'${fileName^}'Pm>(context);\r\nreturn Container();\r\n }\r\n}'
+    echo $'import \'package:flutter/material.dart\';\r\nimport \'package:provider/provider.dart\';\r\nimport \'package:shopLocal/ProviderModels/'${fileName}$'ProviderModel/'${fileName}$'_pm.dart\';\r\n// Copy the line below and add as a child where you want to use '${fileName^}$' Widget\r\n// ChangeNotifierProvider(create:(context)=>'${fileName^}$'Pm(),child: '${fileName^}$'())\r\n\nclass '${fileName^}$' extends StatefulWidget {\r\n@override\r\n_'${fileName^}$'State createState() => _'${fileName^}$'State();\r\n}\r\n\r\nclass _'${fileName^}$'State extends State<'${fileName^}$'> {\r\n @override\r\n  Widget build(BuildContext context) {\r\n'${fileName^}'Pm '${fileName,}'Pm = Provider.of<'${fileName^}'Pm>(context);\r\nreturn Container();\r\n }\r\n}'
 }
 
 getProviderModelCode() {
@@ -12,7 +12,7 @@ getProviderModelCode() {
 
 getStatelessWidgetCode() {
     fileName=$1
-    echo $'import \'package:flutter/material.dart\';\r\nimport \'package:provider/provider.dart\';\r\nimport \'package:shopLocal/ProviderModels/'${fileName}$'ProviderModel/'${fileName}$'_pm.dart\';\r\n// Copy the line below and add as a child where you want to use '${fileName^}$' Widget\r\n// ChangeNotifierProvider(create:(context)=>'${fileName^}$'Pm(),child: '${fileName^}$'())\r\n\nclass '${fileName^}$' extends StatelessWidget {\r\n @override\r\n  Widget build(BuildContext context) {\r\n'${fileName^}'Pm '${fileName}'Pm = Provider.of<'${fileName^}'Pm>(context);\r\nreturn Container();\r\n }\r\n}'
+    echo $'import \'package:flutter/material.dart\';\r\nimport \'package:provider/provider.dart\';\r\nimport \'package:shopLocal/ProviderModels/'${fileName}$'ProviderModel/'${fileName}$'_pm.dart\';\r\n// Copy the line below and add as a child where you want to use '${fileName^}$' Widget\r\n// ChangeNotifierProvider(create:(context)=>'${fileName^}$'Pm(),child: '${fileName^}$'())\r\n\nclass '${fileName^}$' extends StatelessWidget {\r\n @override\r\n  Widget build(BuildContext context) {\r\n'${fileName^}'Pm '${fileName,}'Pm = Provider.of<'${fileName^}'Pm>(context);\r\nreturn Container();\r\n }\r\n}'
 }
 
 getWidgetCode() {
@@ -151,7 +151,7 @@ askForProjetcLocation
 ######################################################
 
 ############# AFTER ENTERING INTO /lib FOLDER OF FLUTTER PROJECT ############
-echo $'Name the WIDGET you are building (try using "camelCasing") \nEg - signIn, signUp, dahboard, mainPage, firstPage\n'
+echo $'Name the WIDGET you are building (try using "lowerCamelCasing") \nEg - signIn, signUp, dahboard, mainPage, firstPage\n'
 while true; do
     read -p "Name - " fileName
     fileName=${fileName//-/}
