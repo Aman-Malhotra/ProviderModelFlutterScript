@@ -176,7 +176,7 @@ while true; do
         [Nn]*)
             echo $'Make sure you have "provider:" already added under "dependencies:" section inside "pubspec.yaml" file.'
             echo "Exiting from program..."
-            exit
+            break
             ;;
         *)
             echo "Please answer yes or no.(y/N)"
